@@ -1,0 +1,8 @@
+      invoke  active_record
+      remove    db/migrate/20170724100716_create_contests.rb
+      create    db/migrate/20170724101410_create_contests.rb
+   identical    app/models/contest.rb
+      invoke    rspec
+   identical      spec/models/contest_spec.rb
+      invoke      factory_girl
+       force        spec/factories/contests.rb
